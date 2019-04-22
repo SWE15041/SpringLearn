@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/customer/customer.iml" filepath="$PROJECT_DIR$/customer/customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dao1/dao1.iml" filepath="$PROJECT_DIR$/dao1/dao1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dao2/myFactory.iml" filepath="$PROJECT_DIR$/dao2/myFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myServlet/myServlet.iml" filepath="$PROJECT_DIR$/myServlet/myServlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_.iml" filepath="$PROJECT_DIR$/spring_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_1/spring_1.iml" filepath="$PROJECT_DIR$/spring_1/spring_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_2/spring_2.iml" filepath="$PROJECT_DIR$/spring_2/spring_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_3/spring_3.iml" filepath="$PROJECT_DIR$/spring_3/spring_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_4/spring_4.iml" filepath="$PROJECT_DIR$/spring_4/spring_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_4_1/spring_4_1.iml" filepath="$PROJECT_DIR$/spring_4_1/spring_4_1.iml" />
     </modules>
   </component>
 </project>
