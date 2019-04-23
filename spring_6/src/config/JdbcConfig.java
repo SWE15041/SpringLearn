@@ -2,6 +2,7 @@ package config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.dbutils.QueryRunner;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 
@@ -28,7 +29,7 @@ public class JdbcConfig {
      * @return
      */
     @Bean(name = "runner")
-    public QueryRunner createQueryRunner(DataSource dataSource) {
+    public QueryRunner createQueryRunner(@Qualifier("dataSource") DataSource dataSource) {
         return new QueryRunner(dataSource);
     }
 
@@ -47,4 +48,19 @@ public class JdbcConfig {
         return ds;
     }
 
+
+    @Bean(name = "ds2")
+    public DataSource createDataSource2() {
+        ComboPooledDataSource ds = null;
+        try {
+            ds = new ComboPooledDataSource();
+            ds.setDriverClass("com.mysql.jdbc.Driver");
+            ds.setJdbcUrl("            ds.setJdbcUrl(“jdbc:mysql://localhost:3306/spring_learn?useUnicode=true&characterEncoding=utf8);\n");
+            ds.setUser("root");
+            ds.setPassword("970131");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return ds;
+    }
 }
