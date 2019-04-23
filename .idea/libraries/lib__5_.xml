@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib (5)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/spring_5/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/spring_5/lib" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/spring-context-4.2.4.RELEASE-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/spring_5/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/spring_5/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

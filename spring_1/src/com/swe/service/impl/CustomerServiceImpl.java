@@ -11,7 +11,6 @@ public class CustomerServiceImpl implements CustomerService {
 //    private CustomerDao customerDao= ((CustomerDao) BeanFactory.getBean("CUSTOMERDAO"));
 
     @Override
-
     public void saveCustomer() {
         System.out.println("业务层调用持久层");
     }
