@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dao1/dao1.iml" filepath="$PROJECT_DIR$/dao1/dao1.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao2/myFactory.iml" filepath="$PROJECT_DIR$/dao2/myFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/myServlet/myServlet.iml" filepath="$PROJECT_DIR$/myServlet/myServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_.iml" filepath="$PROJECT_DIR$/spring_.iml" />

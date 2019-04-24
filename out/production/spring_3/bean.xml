@@ -77,6 +77,7 @@ spring的依赖注入：
             </list>
         </property>
         <property name="myMap">
+            <!--结构相同，标签可以互换-->
             <!--<map>-->
                 <!--<entry key="testD" value="DDD"></entry>-->
                 <!--<entry key="testE" >-->
@@ -94,10 +95,10 @@ spring的依赖注入：
                 <!--<prop key="testG">GGG</prop>-->
             <!--</props>-->
             <map>
-            <entry key="testD" value="DDD"></entry>
-            <entry key="testE" >
-            <value >EEE</value>
-            </entry>
+                <entry key="testD" value="DDD"></entry>
+                <entry key="testE" >
+                  <value >EEE</value>
+                </entry>
             </map>
         </property>
     </bean>

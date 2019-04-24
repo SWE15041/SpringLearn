@@ -15,7 +15,7 @@ import java.util.List;
  * 客户持久层实现类；
  * <bena
  */
-@Repository("cutomerDao")
+@Repository("customerDao")
 public class CustomerDaoImpl implements CustomerDao {
 
     @Resource(name = "runner")

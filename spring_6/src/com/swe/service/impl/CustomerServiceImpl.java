@@ -68,8 +68,8 @@ public class CustomerServiceImpl implements CustomerService {
 
 //    @Autowired
 //    @Qualifier("customerDao2")
-    @Resource(name = "customerDao2")
-    private CustomerDao customerDao =null;
+    @Resource(name = "customerDao")
+    private CustomerDao customerDao;
 
     @Override
     public void saveCustomer() {

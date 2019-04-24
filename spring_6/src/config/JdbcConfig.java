@@ -5,6 +5,7 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 
@@ -39,7 +40,7 @@ public class JdbcConfig {
         try {
             ds = new ComboPooledDataSource();
             ds.setDriverClass("com.mysql.jdbc.Driver");
-            ds.setJdbcUrl("            ds.setJdbcUrl(“jdbc:mysql://localhost:3306/spring_learn?useUnicode=true&characterEncoding=utf8);\n");
+            ds.setJdbcUrl("jdbc:mysql://localhost:3306/spring_learn?useUnicode=true&characterEncoding=utf8");
             ds.setUser("root");
             ds.setPassword("970131");
         } catch (Exception e) {
@@ -49,18 +50,18 @@ public class JdbcConfig {
     }
 
 
-    @Bean(name = "ds2")
-    public DataSource createDataSource2() {
-        ComboPooledDataSource ds = null;
-        try {
-            ds = new ComboPooledDataSource();
-            ds.setDriverClass("com.mysql.jdbc.Driver");
-            ds.setJdbcUrl("            ds.setJdbcUrl(“jdbc:mysql://localhost:3306/spring_learn?useUnicode=true&characterEncoding=utf8);\n");
-            ds.setUser("root");
-            ds.setPassword("970131");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        return ds;
-    }
+//    @Bean(name = "ds2")
+//    public DataSource createDataSource2() {
+//        ComboPooledDataSource ds = null;
+//        try {
+//            ds = new ComboPooledDataSource();
+//            ds.setDriverClass("com.mysql.jdbc.Driver");
+//            ds.setJdbcUrl("            ds.setJdbcUrl(“jdbc:mysql://localhost:3306/spring_learn?useUnicode=true&characterEncoding=utf8);\n");
+//            ds.setUser("root");
+//            ds.setPassword("970131");
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//        return ds;
+//    }
 }
